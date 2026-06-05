@@ -1,0 +1,45 @@
+{
+  "name": "whatsapp-bot-platform",
+  "version": "1.0.0",
+  "description": "Complete WhatsApp Bot Platform with Baileys",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "build": "echo 'No build step needed'",
+    "test": "jest",
+    "migrate": "node src/migrations/run.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "api"
+  ],
+  "author": "MSLOADERSHOP",
+  "license": "MIT",
+  "dependencies": {
+    "@baileys/core": "^6.4.1",
+    "@hapi/joi": "^17.11.0",
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.1.2",
+    "node-cron": "^3.0.3",
+    "pg": "^8.11.3",
+    "pino": "^8.17.2",
+    "pino-pretty": "^10.3.1",
+    "qrcode": "^1.5.3",
+    "socket.io": "^4.7.2",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
